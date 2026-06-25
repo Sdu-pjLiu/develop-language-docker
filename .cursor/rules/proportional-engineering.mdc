@@ -1,0 +1,14 @@
+---
+description: Proportional Engineering — evidence, reuse, deletion, today-only builds; full skill in .cursor/skills
+alwaysApply: true
+---
+
+# Proportional Engineering (summary)
+
+Full skill: `.cursor/skills/proportional-engineering/SKILL.md` (or `@proportional-engineering`).
+
+**Supreme rule:** Code, abstractions, tests, and architecture must stay proportional to business complexity; every line, file, dependency, and test must justify itself.
+
+**Five principles:** (1) Evidence before change (2) Reuse before build (3) Prefer deletion over addition (4) Build only today — no speculative patterns, deps, or local “elegance” that hurts the system (5) Stop when the goal is met.
+
+**Tests:** Behavior over mocks; ~0–2 tests per ~10-line change; do not grow tests when deleting code.

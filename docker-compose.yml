@@ -1,0 +1,42 @@
+name: develop_lang
+
+x-common: &common
+  working_dir: /workspace
+  volumes:
+    - .:/workspace
+
+services:
+  python-3.13:
+    <<: *common
+    container_name: devlang-python-3.13
+    build:
+      context: ./python-3.13
+    image: devlang/python:3.13-dev
+
+  python-3.11:
+    <<: *common
+    container_name: devlang-python-3.11
+    build:
+      context: ./python-3.11
+    image: devlang/python:3.11-dev
+
+  go:
+    <<: *common
+    container_name: devlang-go
+    build:
+      context: ./go
+    image: devlang/go:1.25-dev
+
+  rust:
+    <<: *common
+    container_name: devlang-rust
+    build:
+      context: ./rust
+    image: devlang/rust:1.84-dev
+
+  cpp:
+    <<: *common
+    container_name: devlang-cpp
+    build:
+      context: ./cpp
+    image: devlang/cpp:24.04-dev
