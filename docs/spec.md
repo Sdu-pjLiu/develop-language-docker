@@ -61,7 +61,7 @@ develop_lang/
 
 **go**
 
-- go install: dlv@v1.24.0, golangci-lint@v1.61.0
+- go install: dlv@v1.24.0, golangci-lint@v2.4.0（v2 模块路径，Go 1.25 兼容）
 
 **rust**
 
